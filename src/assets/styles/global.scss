@@ -1,0 +1,66 @@
+/* fade-transform */
+// 横向渐变
+.fade-transform-leave-active,
+.fade-transform-enter-active {
+  transition: opacity 0.5s, transform 0.5s;
+}
+.fade-transform-enter {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+.fade-transform-enter-to,
+.fade-transform-leave {
+  opacity: 1;
+  transform: translateX(0);
+}
+.fade-transform-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+//鼠标移上去才显示
+// 滚动条
+.el-card,.el-table
+ {
+  overflow: auto !important;
+  &::-webkit-scrollbar {
+    background: transparent;
+    width: 6px;
+    height: 6px;
+  }
+  &::-webkit-scrollbar-track-piece {
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-clip: padding-box;
+    background-color: #d6d6d6;
+    border: 1px solid transparent;
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+  &:hover::-webkit-scrollbar-thumb {
+    background-color: #a1caff;
+  }
+}
+/* ---el-table滚动条公共样式--- */
+.el-scrollbar {
+  // 横向滚动条
+  .el-scrollbar__bar.is-horizontal .el-scrollbar__thumb {
+    opacity: 1; // 默认滚动条自带透明度
+    // height: 8px; // 横向滑块的宽度
+    // border-radius: 2px; // 圆角度数
+    background-color: #a1caff; // 滑块背景色
+    //box-shadow: 0 0 6px rgba(0, 0, 0, 0.15); // 滑块阴影
+  }
+  // 纵向滚动条
+  .el-scrollbar__bar.is-vertical .el-scrollbar__thumb {
+    opacity: 0.8;
+    width: 4px; // 纵向滑块的宽度
+    //border-radius: 2px;
+    background-color: #a1caff;
+    //box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+  }
+}
+

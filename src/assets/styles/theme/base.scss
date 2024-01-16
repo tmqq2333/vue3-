@@ -1,0 +1,41 @@
+//定义基础色
+
+//主色
+
+:root  {
+  --color-primary: #409eff;
+  --color-primary-light: rgb(255, 0, 0);
+  --base-font-size:16px;
+  //可以修改为不同
+  --el-font-size-base:--base-font-size;
+  --color-btn:'#47f856'
+}
+
+$--color-primary:var(--color-primary);
+$--color-primary-light:var(--color-primary-light);
+
+//大小
+$icon-font-size:20px;  //icon大小
+$top-height:60px;    //top的高度
+$left-menu-items-height:60px;
+
+
+$text: #595959;
+$text-2: #8c8c8c;
+
+$dark-text: rgb(230, 230, 230);
+$dark-text-active: #eee;
+$dark-bg:  $--color-primary;//#001d31
+$dark-bg-active:#019ce4;
+
+$light-text: $text;
+$light-text-active: $--color-primary;
+$light-bg: #fff;
+$light-bg-active: $--color-primary-light;
+
+$primary-text: rgb(230, 230, 238);
+$primary-text-2: rgb(230, 230, 236);
+$primary-text-active: #fff;
+$primary-bg: $--color-primary;
+$primary-bg-light: $--color-primary-light;
+$primary-bg-active: $--color-primary-light;
